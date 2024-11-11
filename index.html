@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, meu amor, eu te amo infinitamente!</title>
+    <!-- Importando fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #e75480;
+            animation: slideIn 1s ease-out;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #ff69b4;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .fotos figure {
+            margin: 0;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fotos img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fotos img:hover {
+            transform: scale(1.1);
+        }
+
+        .fotos figcaption {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+            font-family: 'Dancing Script', cursive;
+            animation: moveText 1s ease-out;
+        }
+
+        #mensagem p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2em;
+            color: #555;
+            padding: 0 20px;
+            line-height: 1.6;
+            margin-top: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .confete {
+            position: absolute;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4;
+            animation: cair 5s linear infinite;
+            border-radius: 50%;
+        }
+
+        #mensagem {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Botão de música */
+        .music-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 16px;
+        }
+
+        .music-btn:hover {
+            background-color: #e75480;
+        }
+
+        /* Estilos para a playlist */
+        #playlist iframe {
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        #playlist iframe:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilos para o fundo */
+        .tulipas-fundo {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50vh;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/Tulips_in_Spring_2.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        /* Animação dos confetes caindo */
+        @keyframes cair {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Música de fundo (coloque o link correto para o arquivo de áudio) -->
+    <audio id="background-music" autoplay loop>
+        <source src="caminho/para/sua-musica.mp3" type="audio/mp3">
+        Seu navegador não suporta o áudio.
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()">Desligar Música</button>
+
+    <!-- Página Inicial -->
+    <section id="home">
+        <h1>Feliz Aniversário minha princesa, te amo infinitamente!🤍</h1>
+        <p>Hoje é um dia muito especial, e eu queria muito comemorar ele ao teu lado, mas como não posso, criei essa porcaria aqui.</p>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section id="galeria">
+        <h2>Momentos muito legais que passamos juntos e eu gostaria de recordar.</h2>
+        <div class="fotos">
+            <figure>
+                <img src="https://i.imgur.com/gwwsdoO.jpg" alt="Nossa primeira fotinha 😞">
+                <figcaption>Nossa primeira fotinha</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/r8PN0zX.jpg" alt="Um dos momentos mais felizes ao teu lado">
+                <figcaption>Um dos momentos mais felizes ao teu lado</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/0MgrmFK.jpg" alt="Eu pegando no seu peitinho pq sim">
+                <figcaption>Eu pegando no seu peitinho pq sim</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/cdmuhAk.jpg" alt="Eu você e safirinha num dia comum (sdds)">
+                <figcaption>Eu você e safirinha num dia comum (sdds)</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/j2SxYpE.jpg" alt="Eu tirando esse teu sorriso mais lindo do mundo com uma foto besta">
+                <figcaption>Eu tirando esse teu sorriso mais lindo do mundo com uma foto besta</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/Bo0UEuG.jpg" alt="Quando você me deu essa camisa e eu fiquei muito feliz">
+                <figcaption>Quando você me deu essa camisa e eu fiquei muito feliz</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/tiKcLN6.jpg" alt="Saudades da gente assim">
+                <figcaption>Saudades da gente assim</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.imgur.com/Q7Fxg2E.jpg" alt="Te amo">
+                <figcaption>Te amo</figcaption>
+            </figure>
+            <figure>
+                
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Mensagem Especial -->
+    <section id="mensagem">
+        <h2>Meu humilde texto pra você 🙄</h2>
+        <p>Oi meu amor, como seu último aniversário queria estar te olhando enquanto você lê esse texto, pra depois te colocar na chapa loucamente🥰🥰 brincadeiras a parte, queria te desejar um feliz aniversário e queria também conseguir expressar tudo o que tu me faz sentir. Mas eu sei que nem escrevendo um livro eu conseguiria isso. Se eu conseguisse te definir em apenas uma palavra, seria paz. Nenhum abraço, nenhum beijo me conforta como o teu, o sentimento de estar em teus braços é único, a sensação de ouvir tua voz e a tua risada é indescritível. Queria muito te abraçar e te encher de beijos agora, espero ansiosamente pelo dia em que eu possa te encontrar novamente e te dar um abraço tão apertado que você vai querer que eu pare. Você é luz, você é alegria, você é tudo de bom que existe nesse mundo repleto de coisas ruins. Você é a luz no fim do túnel, você é a cor nos filmes preto e branco, você é o sol nos dias chuvosos e tristes. Você é simplesmente a pessoa mais incrível que eu já conheci até hoje, e isso se reflete quando eu digo que não consigo te esquecer e deixar de te amar, quando eu não consigo ouvir uma música sequer e não lembrar de você. Eu te desejo tudo de bom nesse mundo, prosperidade e principalmente sabedoria pra conseguir florescer e crescer nessa tua vida tão conturbada. Eu tô morrendo de saudades de você, meu amor. Eu te amo infinitamente, minha princesa. 143!🤍</p>
+    </section>
+
+    <!-- Playlist -->
+    <section id="playlist">
+        <h2>Uma playlist com algumas músicas que me fazem pensar em você</h2>
+        <iframe src="https://open.spotify.com/embed/playlist/7mTl72sG6Kslud6hCwwfIu?utm_source=generator" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </section>
+
+    <!-- Tulipas no fundo -->
+    <div class="tulipas-fundo"></div>
+
+    <script>
+        function toggleMusic() {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+
+        // Função para criar confetes caindo
+        function criarConfete() {
+            const confete = document.createElement('div');
+            confete.classList.add('confete');
+            confete.style.left = Math.random() * 100 + 'vw';
+            confete.style.animationDuration = Math.random() * 2 + 3 + 's';
+            document.body.appendChild(confete);
+
+            setTimeout(() => {
+                confete.remove();
+            }, 5000);
+        }
+
+        // Criar confetes a cada 300ms
+        setInterval(criarConfete, 300);
+    </script>
+
+</body>
+</html>
